@@ -1,0 +1,404 @@
+test(color=red)
+	border solid 1px color
+	
+@import './normalize.css'
+/*@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);*/
+*
+	margin 0
+	padding 0
+	
+body
+	background-image url('../img/bgMobile@2x.jpg')
+	background-repeat no-repeat
+	font-family 'Raleway', sans-serif
+	font-size 16px
+	width 100%
+	height 2305px
+	margin 0
+	padding 0
+	
+.cuerpo
+	max-width 100%
+	height auto
+	border solid 4px pink
+	
+.nav
+	display flex
+	justify-content space-between
+	
+	&-logo
+		margin-left 1.5rem
+		&-img
+			width 192px
+	
+	&-menu
+		color white
+		margin auto 2rem
+.mv
+	display flex
+	flex-wrap wrap
+	width 100%
+	height auto
+	test(white)
+
+.mision
+	display flex
+	justify-content center
+	flex-wrap wrap
+	width 100%
+	test(red)
+	
+	&-bg
+		background-image url('../img/tabla.png')
+		background-repeat no-repeat
+		display flex
+		justify-content center
+		flex-wrap wrap
+		padding 1rem
+		width 440px
+		test(white)
+		
+		&__title
+			background-image url('../img/mision.png')
+			background-repeat no-repeat
+			width 80%
+			height 90px
+			margin-top 1rem
+			test(orange)
+	
+	&-text
+		color #1c0d05
+		font-weight 700	
+		font-size 1.2rem
+		padding 1rem
+		text-align center
+		test(red)
+.vision
+	display flex
+	justify-content center
+	flex-wrap wrap
+	width 100%
+	test(red)
+	
+	&-bg
+		background-image url('../img/tabla.png')
+		background-repeat no-repeat
+		background-size cover
+		display flex
+		justify-content center
+		flex-wrap wrap
+		padding 1rem
+		width 440px
+		test(green)
+		
+		&__title
+			background-image url('../img/vision.png')
+			background-repeat no-repeat
+			width 80%
+			height 90px
+			margin-top 1rem
+			test(orange)
+		
+	&-text
+		color #1c0d05
+		font-weight 700	
+		font-size 1.2rem
+		padding 1rem
+		text-align center
+		test(red)	
+		
+.tyg
+	display flex
+	flex-wrap wrap
+	justify-content center		
+.tips
+	display flex
+	justify-content center
+	padding 1rem
+	test(red)
+	
+	img
+		height 130px
+	
+.guarnicion, .lineas, .promociones
+	display flex
+	justify-content center
+	flex-wrap wrap
+	width 100%
+	height 220px
+	test(red)
+	
+	&-bg
+		background-image url('../img/guarnicion@2x.png'), url('../img/carton@2x.png')
+		background-repeat no-repeat
+		background-position center
+		background-size contain
+		width 100%
+		
+.lineas
+	margin-top 2rem
+	height 800px
+	
+	p
+		width 90%
+		color white
+		text-align center
+		font-weight 700
+		text-shadow -1px -1px 10px black
+		test(yellow)
+	
+	&-title
+		background url('../img/lineas.png')
+		background-repeat no-repeat
+		background-size contain
+		width 290px
+		height 150px
+		test(yellow)
+		
+	&-animals
+		display flex
+		justify-content center
+		flex-wrap wrap
+		width 100%
+		test(orange)
+		
+		&-pollo
+			background url('../img/svg/pollo.svg')
+			background-repeat no-repeat
+			margin 1rem
+			width 83px
+			height 131px
+			test(yellow)
+			
+		&-cerdo
+			background url('../img/svg/cerdo.svg')
+			background-repeat no-repeat
+			margin 1rem
+			width 228px
+			height 123px
+			test(yellow)
+		
+		&-res
+			background url('../img/svg/res.svg')
+			background-repeat no-repeat
+			margin 1rem
+			width 319px
+			height 196px
+			test(yellow)
+			
+.promociones
+	background-image url('../img/cartonR.png')
+	background-repeat no-repeat
+	background-size cover
+	display flex
+	flex-wrap wrap
+	width 100%
+	height 820px
+			
+	&-title
+		background-image url('../img/svg/promociones.svg')
+		background-repeat no-repeat
+		margin 2rem 1rem 0 1rem
+		width 464px
+		height 100px
+		test(orange)
+	&-img
+		background-image url('../img/adR.jpg')
+		background-repeat no-repeat
+		background-size contain
+		margin 0
+		width 90%
+		height 230px
+		test(yellow)
+	
+	&-textos
+		width 90%
+		text-align center
+		margin 0
+		test(red)
+		
+		p + h2
+			font-size 2rem		
+		
+	&-redes
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+		margin 0
+		padding 0
+		width 70%
+		height 110px
+		test(red)
+		
+		&-fb
+			background-image url('../img/svg/face.svg')
+			background-repeat no-repeat
+			width 100px
+			height 100px
+		
+		&-ig
+			background-image url('../img/svg/insta.svg')
+			background-repeat no-repeat
+			width 100px
+			height 100px
+.footer
+	width 100%
+	height 150px
+	test(yellow)
+	
+	&-cuchillo
+		background-image url('../img/cuchilloR.png')
+		background-repeat no-repeat
+		background-size cover
+		display flex
+		justify-content center
+		align-items flex-end
+		width 100%
+		height 150px
+		test(pink)
+		
+		&-logo
+			background-image url('../img/svg/logoMP.svg')
+			background-repeat no-repeat
+			margin-bottom .5rem
+			width 30%
+			height 50px
+			test(red)
+
+/*.cursiva
+	font-weight 600
+	font-style italic
+	font-size 1.2rem*/
+	
+// moviles pequeños	
+@media (min-width: 320px)
+	.mision
+		&-bg
+			background-size cover
+	.guarnicion
+		&-bg
+			background-size cover
+	.promociones2
+		display none		
+			
+//moviles grandes			
+@media (min-width: 500px)
+	.mv
+		display flex
+		flex-wrap nowrap
+	.mision
+		width 360px
+		margin 0 .5rem
+	.vision
+		width 360px
+		margin 0 .5rem
+	.promociones2
+		display none	
+		
+//ipad		
+@media (min-width: 768px)
+	body
+		background-image url('../img/ipad/background.jpg')
+		height auto
+	.tyg
+		margin 2rem
+		justify-content space-between	
+	.guarnicion
+		width 60%
+	.lineas
+		height 500px
+		margin 2rem	0
+	.promociones
+		height 520px
+		justify-content space-around
+		&-title
+			width 100%
+			height 80px
+			background-position center
+		&-img
+			width 50%
+			height 280px
+		&-textos
+			line-height 2rem
+			width 35%
+			height 280px
+	.promociones2
+		display none		
+	.footer
+		height 250px
+		&-cuchillo
+			height 250px
+//desktop
+@media(min-width: 769px)
+	body
+		background-image url('../img/legumbres.png'), url('../img/bg-desktop.jpg')
+		background-position left
+		background-repeat-y repeat
+		background-size contain
+		display flex
+		justify-content center
+		width 100%	
+	.cuerpo
+		max-width 1366px
+		display flex
+		flex-wrap wrap
+	.nav
+		width 100%	
+	.tml
+		display flex
+		justify-content center
+		height 400px
+	.tyg
+		order -1
+		height auto
+	.mv
+		display flex
+		justify-content space-around
+		margin 0 auto
+		height 350px
+	.cebollas
+		background-image url('../img/cebollas.png')
+		background-size cover
+		background-repeat no-repeat
+		width 100%
+		height 150px
+	.lineas
+		width 15%		
+	.guarnicion
+		display none
+	.promo
+		display flex
+		justify-content space-around
+		width 70rem	
+		border solid 3px red
+	.promociones
+		width 48%
+		flex-wrap wrap
+		&-img
+			width 100%
+			height 200px
+			background-position center
+		&-textos
+			line-height 1.5rem
+			height 150px
+			width 100%
+		&-redes
+			height 50px
+			&-fb
+				height 50px
+			&-ig
+				height 50px	
+	.cursiva
+		font-size .8rem
+	.textosD
+		font-size .8rem
+	.promociones2
+		background-image url('../img/cartonR.png')
+		background-repeat no-repeat
+		background-size cover
+		display flex
+		flex-wrap wrap
+		width 48%			
+	.footer
+		&-cuchillo
+			display none				
