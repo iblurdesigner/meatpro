@@ -1,0 +1,18 @@
+commit 2a8c39a8b616998c07c3cbf1f99cad7b54f14343
+Merge: 1326554 1b763aa
+Author: iblurdesigner <nevomen@gmail.com>
+Date:   Wed May 4 16:18:07 2016 -0500
+
+    Merge branch 'master' of https://github.com/iblurdesigner/meatpro
+
+commit 1326554cd491b5d8e0520db81c8cd415f5dc0b85
+Author: iblurdesigner <nevomen@gmail.com>
+Date:   Wed May 4 16:17:17 2016 -0500
+
+    subimos los archivos origen
+
+commit 1b763aa3935b67b6ebe63170131bbaf6767640f7
+Author: David Flores <nevomen@gmail.com>
+Date:   Wed May 4 16:11:45 2016 -0500
+
+    Initial commit
